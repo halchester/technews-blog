@@ -30,4 +30,4 @@ class Comment(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return f'Commented by {self.name} on {self.created_on}'
+        return 'Commented on {} by {}'.format(self.created_on, self.name)
