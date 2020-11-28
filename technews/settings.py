@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     #own app
     'blogs',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR,'assets'),
 )
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
