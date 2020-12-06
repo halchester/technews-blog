@@ -8,6 +8,8 @@
             <div class=" col-md-8 col-md-10 mx-auto">
                 <div class="site-heading">
                     <h3 class=" site-heading my-4 mt-3 text-black"> Welcome to TechNews </h3>
+                    <span style="font-size: 18;color : black; margin-right: 15px;">Hello, {{request.user}}</span>
+                    <span><a href="{% url 'logout'%}">Logout</a></span>
                 </div>
             </div>
         </div>
